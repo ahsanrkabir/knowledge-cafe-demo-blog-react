@@ -10,7 +10,11 @@ const Blogs = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  return <div></div>;
+  return (
+    <div className="w-2/3">
+      <h3 className="text-2xl font-bold">Blogs: {blogs.length}</h3>
+    </div>
+  );
 };
 
 export default Blogs;
