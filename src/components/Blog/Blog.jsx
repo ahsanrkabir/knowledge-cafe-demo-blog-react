@@ -4,6 +4,7 @@ import { MdOutlineBookmarkBorder } from "react-icons/md";
 const Blog = ({ blog, handleAddToBookMark, handleMarkAsRead }) => {
   // console.log(blog);
   const {
+    id,
     title,
     cover,
     author,
@@ -46,7 +47,7 @@ const Blog = ({ blog, handleAddToBookMark, handleMarkAsRead }) => {
       ))}
       <div>
         <button
-          onClick={() => handleMarkAsRead(reading_time)}
+          onClick={() => handleMarkAsRead(id, reading_time)}
           className="text-[#6047EC] text-xl font-semibold underline"
         >
           Mark As Read
